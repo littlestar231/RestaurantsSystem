@@ -9,13 +9,14 @@ import java.awt.event.WindowAdapter;
 
 public class Begin extends JFrame{
     private static final long serialVersionUID = 1L;
-    private JPanel contentPane;
+    JPanel contentPane;
     public static void main(String[] args){
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
                     Begin frame = new Begin();
                     frame.setVisible(true);
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -71,6 +72,9 @@ public class Begin extends JFrame{
             }
        
         });
+        /*
+        StaffRegister
+         */
         JButton btnStaffRegister = new JButton("Staff Register");
         btnStaffRegister.setFont(new Font("Times New Roman", Font.PLAIN, 25));
         btnStaffRegister.setBackground(new Color(255,255,255));
@@ -80,6 +84,74 @@ public class Begin extends JFrame{
                 btnStaffRegisterActionPerformed(actionEvent);
             }
         });
+        /*
+        CustomerRegister
+         */
+        JButton btnCustomerRegister = new JButton("Customer Register");
+        btnCustomerRegister.setFont(new Font("Times New Roman", Font.PLAIN, 25));
+        btnCustomerRegister.setBackground(new Color(255,255,255));
+        btnCustomerRegister.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                btnCustomerRegisterActionPerformed(actionEvent);
+            }
+        });
+        /*
+        Exit
+         */
+        JButton btnExit = new JButton("Exit");
+        btnExit.setFont(new Font("Eras Bold ITC", Font.PLAIN, 18));
+        btnExit.setBackground(new Color(255, 255, 240));
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitActionPerformed(evt);
+            }
+        });
+        GroupLayout gl_contentPane = new GroupLayout(contentPane);
+        gl_contentPane.setHorizontalGroup(
+                gl_contentPane.createParallelGroup(GroupLayout.Alignment.LEADING)
+                        .addGroup(gl_contentPane.createSequentialGroup()
+                                .addGroup(gl_contentPane.createParallelGroup(GroupLayout.Alignment.LEADING)
+                                        .addGroup(gl_contentPane.createSequentialGroup()
+                                                .addContainerGap()
+                                                .addComponent(ChooseService))
+                                        .addGroup(gl_contentPane.createSequentialGroup()
+                                                .addGap(51)
+                                                .addGroup(gl_contentPane.createParallelGroup(GroupLayout.Alignment.TRAILING)
+                                                        .addComponent(btnExit)
+                                                        .addComponent(WelcomeToRestaurant)))
+                                        .addGroup(gl_contentPane.createSequentialGroup()
+                                                .addGap(205)
+                                                .addGroup(gl_contentPane.createParallelGroup(GroupLayout.Alignment.LEADING, false)
+                                                        .addComponent(btnStaffLoginIn, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .addComponent(btnCustomerLoginIn, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .addComponent(btnStaffRegister, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .addComponent(btnCustomerRegister, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addContainerGap(101, Short.MAX_VALUE))
+        );
+        gl_contentPane.setVerticalGroup(
+                gl_contentPane.createParallelGroup(GroupLayout.Alignment.LEADING)
+                        .addGroup(gl_contentPane.createSequentialGroup()
+                                .addGap(42)
+                                .addComponent(WelcomeToRestaurant)
+                                .addGap(18)
+                                .addComponent(ChooseService)
+                                .addGap(18)
+                                .addComponent(btnStaffLoginIn, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(26)
+                                .addComponent(btnCustomerLoginIn)
+                                .addGap(27)
+                                .addComponent(btnStaffRegister)
+                                .addGap(29)
+                                .addComponent(btnCustomerRegister)
+                                .addGap(32)
+                                .addComponent(btnExit)
+                                .addGap(35))
+        );
+        contentPane.setLayout(gl_contentPane);
+    }
+
+    private void btnCustomerRegisterActionPerformed(ActionEvent actionEvent) {
     }
 
     private void btnStaffRegisterActionPerformed(ActionEvent actionEvent) {
@@ -91,10 +163,8 @@ public class Begin extends JFrame{
     private void btnStaffLoginInActionPerformed(ActionEvent evt) {
     }
 
-
-    public void addWindowListener(WindowAdapter windowAdapter) {
+    private void btnExitActionPerformed(ActionEvent evt) {
+        System.exit(0);
     }
 
-    public void setVisible(boolean b) {
-    }
 }

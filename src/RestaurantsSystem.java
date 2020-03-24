@@ -1,21 +1,24 @@
 import view.Begin;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class RestaurantsSystem {
-    public static void main(String[] args){
-        try{
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        try {
             String systemLookAndFeel = UIManager.getSystemLookAndFeelClassName();
             UIManager.setLookAndFeel(systemLookAndFeel);
-        }
-        catch (ClassNotFoundException | IllegalAccessException | UnsupportedLookAndFeelException | InstantiationException e){
+        } catch (ClassNotFoundException | IllegalAccessException | InstantiationException
+                | UnsupportedLookAndFeelException e) {
             System.out.println("Error: " + e);
         }
-        EventQueue.invokeLater(()->{
+        EventQueue.invokeLater(() -> {
             Begin begin = new Begin();
-            begin.addWindowListener(new java.awt.event.WindowAdapter() {
+            begin.addWindowListener(new WindowAdapter() {
                 @Override
-                public void windowClosing(java.awt.event.WindowEvent e) {
+                public void windowClosing(WindowEvent e) {
                     System.exit(0);
                 }
             });

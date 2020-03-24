@@ -1,4 +1,6 @@
 package view;
 
-public class StaffRegister {
+import javax.swing.*;
+
+public class StaffRegister extends JFrame {
 }

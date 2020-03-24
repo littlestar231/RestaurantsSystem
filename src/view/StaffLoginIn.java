@@ -1,4 +1,6 @@
 package view;
 
-public class StaffLoginIn {
+import javax.swing.*;
+
+public class StaffLoginIn extends JFrame {
 }

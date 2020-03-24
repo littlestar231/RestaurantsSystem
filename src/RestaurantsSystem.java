@@ -6,7 +6,7 @@ import java.awt.event.WindowEvent;
 
 public class RestaurantsSystem {
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
+
         try {
             String systemLookAndFeel = UIManager.getSystemLookAndFeelClassName();
             UIManager.setLookAndFeel(systemLookAndFeel);

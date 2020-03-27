@@ -10,7 +10,7 @@ It is a Coursework
 
 - ##### calculation: the classes related to calculations and statistics. 
 
-- ##### Data: includes classes about data processing.  
+- ##### data: includes classes about data processing.  
 
 - ......
 

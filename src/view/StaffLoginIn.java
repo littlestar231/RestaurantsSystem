@@ -18,6 +18,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
 import com.jgoodies.forms.factories.DefaultComponentFactory;
+import javax.swing.JPasswordField;
 
 public class StaffLoginIn extends JFrame {
 
@@ -27,8 +28,8 @@ public class StaffLoginIn extends JFrame {
 	private static final long serialVersionUID = 5050092661082459104L;
 	private JPanel contentPane;
 	private JTextField UserName;
-	private JTextField Password;
 	private JTextArea txtrStaffLoginIn;
+	private JPasswordField password;
 
 	/**
 	 * Launch the application.
@@ -90,11 +91,6 @@ public class StaffLoginIn extends JFrame {
 		txtrPassword.setBounds(10, 147, 82, 24);
 		contentPane.add(txtrPassword);
 		
-		Password = new JTextField();
-		Password.setColumns(10);
-		Password.setBounds(102, 149, 283, 33);
-		contentPane.add(Password);
-		
 		txtrStaffLoginIn = new JTextArea();
 		txtrStaffLoginIn.setFont(new Font("Monospaced", Font.BOLD, 23));
 		txtrStaffLoginIn.setBackground(SystemColor.inactiveCaptionBorder);
@@ -111,5 +107,9 @@ public class StaffLoginIn extends JFrame {
 		btnBack.setBackground(Color.WHITE);
 		btnBack.setBounds(344, 226, 82, 29);
 		contentPane.add(btnBack);
+		
+		password = new JPasswordField();
+		password.setBounds(102, 136, 283, 33);
+		contentPane.add(password);
 	}
 }

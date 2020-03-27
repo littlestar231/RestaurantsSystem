@@ -6,12 +6,12 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JRadioButtonMenuItem;
+import javax.swing.JMenuItem;
+import javax.swing.JLabel;
 import javax.swing.JButton;
-import java.awt.GridLayout;
-import javax.swing.JTextArea;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import java.awt.SystemColor;
 
 public class ModifyMenu extends JFrame {
 
@@ -40,46 +40,39 @@ public class ModifyMenu extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
-		contentPane.setForeground(SystemColor.activeCaption);
-		contentPane.setBackground(SystemColor.inactiveCaptionBorder);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton btnNewButton = new JButton("Change Menu");
+		JPanel panel = new JPanel();
+		panel.setBounds(10, 10, 296, 243);
+		contentPane.add(panel);
+		
+		JLabel lblNewLabel = new JLabel("Menu");
+		panel.add(lblNewLabel);
+		
+		JButton btnNewButton = new JButton("New");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		btnNewButton.setBounds(42, 80, 124, 23);
+		btnNewButton.setBounds(316, 20, 110, 23);
 		contentPane.add(btnNewButton);
 		
-		JButton btnSendBill = new JButton("Send Bill");
-		btnSendBill.addActionListener(new ActionListener() {
+		JButton btnNewButton_1 = new JButton("Delete");
+		btnNewButton_1.setBounds(316, 53, 110, 23);
+		contentPane.add(btnNewButton_1);
+		
+		JButton btnNewButton_1_1 = new JButton("Change Name");
+		btnNewButton_1_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		btnSendBill.setBounds(42, 113, 124, 23);
-		contentPane.add(btnSendBill);
+		btnNewButton_1_1.setBounds(316, 86, 110, 23);
+		contentPane.add(btnNewButton_1_1);
 		
-		JButton btnYearlyReport = new JButton("Yearly Report");
-		btnYearlyReport.setBounds(42, 145, 124, 23);
-		contentPane.add(btnYearlyReport);
-		
-		JTextArea textArea = new JTextArea();
-		textArea.setBounds(198, 10, 228, 243);
-		contentPane.add(textArea);
-		
-		JButton btnNewButton_2_1 = new JButton("Back");
-		btnNewButton_2_1.setBounds(10, 230, 59, 23);
-		contentPane.add(btnNewButton_2_1);
-		
-		JButton btnNewButton_2_1_1 = new JButton("Exit");
-		btnNewButton_2_1_1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-			}
-		});
-		btnNewButton_2_1_1.setBounds(79, 230, 59, 23);
-		contentPane.add(btnNewButton_2_1_1);
+		JButton btnNewButton_1_2 = new JButton("Change Price");
+		btnNewButton_1_2.setBounds(316, 119, 110, 23);
+		contentPane.add(btnNewButton_1_2);
 	}
 }

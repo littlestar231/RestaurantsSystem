@@ -6,7 +6,11 @@ It is a Coursework
 
 - #### RestaurantsSystem: program entrance
 
-- ##### view: to process GUI
+- ##### view: includes classes about GUI.
+
+- ##### calculation: the classes related to calculations and statistics. 
+
+- ##### Data: includes classes about data processing.  
 
 - ......
 
@@ -17,4 +21,5 @@ It is a Coursework
 - [ ] Customer GUI
 - [ ] Staff GUI
 - [ ] Database
-- [ ] Actions of Buttons: many many many
+- [ ] Actions of Buttons in every class
+- [ ] Calculations and statistics

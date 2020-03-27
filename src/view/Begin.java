@@ -35,8 +35,8 @@ public class Begin extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(100,100,701,545);
         contentPane = new JPanel();
-        contentPane.setBackground(new Color(223,237,255));
-        contentPane.setForeground(new Color(255, 179, 111));
+        contentPane.setBackground(SystemColor.inactiveCaptionBorder);
+        contentPane.setForeground(SystemColor.activeCaption);
         contentPane.setBorder(new EmptyBorder(5,5,5,5));
         setContentPane(contentPane);
 

@@ -21,6 +21,10 @@ import com.jgoodies.forms.factories.DefaultComponentFactory;
 
 public class StaffLoginIn extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5050092661082459104L;
 	private JPanel contentPane;
 	private JTextField UserName;
 	private JTextField Password;

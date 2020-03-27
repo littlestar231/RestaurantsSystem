@@ -1,3 +1,5 @@
+package view;
+
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -9,7 +11,6 @@ import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
-import javax.swing.JTextField;
 import java.awt.FlowLayout;
 import javax.swing.JRadioButton;
 import java.awt.Color;
@@ -62,7 +63,7 @@ public class Payment extends JFrame {
         contentPane.add(panel_C, BorderLayout.CENTER);
         panel_C.setLayout(new BorderLayout(0, 0));
         //中部的pane
-        JLabel lblNewLabel = new JLabel("Payment information");
+        JLabel lblNewLabel = new JLabel("view.Payment information");
         lblNewLabel.setBackground(SystemColor.menu);
         lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
         lblNewLabel.setBorder(BorderFactory.createLineBorder(Color.black));

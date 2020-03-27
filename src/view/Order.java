@@ -1,18 +1,15 @@
+package view;
+
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
-import java.awt.FlowLayout;
 import javax.swing.SwingConstants;
 import javax.swing.JLabel;
-import javax.swing.JTextField;
 import java.awt.Color;
-import java.awt.SystemColor;
-import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 import javax.swing.border.LineBorder;
 

@@ -6,6 +6,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+import javax.swing.GroupLayout.Alignment;
 
 public class Begin extends JFrame{
     private static final long serialVersionUID = 1L;
@@ -36,131 +39,134 @@ public class Begin extends JFrame{
         contentPane.setForeground(new Color(255, 179, 111));
         contentPane.setBorder(new EmptyBorder(5,5,5,5));
         setContentPane(contentPane);
+
         /*
         Welcome To Restaurant
          */
         JLabel WelcomeToRestaurant = new JLabel("Welcome to restaurant!");
         WelcomeToRestaurant.setFont(new Font("Times New Roman", Font.BOLD, 40));
+
         /*
         Choose Service
          */
         JLabel ChooseService = new JLabel("Please choose the service:");
         ChooseService.setFont(new Font("Times New Roman", Font.BOLD, 18));
+
         /*
         StaffLoginIn
          */
         JButton btnStaffLoginIn = new JButton("Staff Login In");
         btnStaffLoginIn.setFont(new Font("Times New Roman", Font.PLAIN, 25));
-        btnStaffLoginIn.setForeground(new Color(0, 0, 0));
         btnStaffLoginIn.setBackground(new Color(255, 255, 255));
-        btnStaffLoginIn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                btnStaffLoginInActionPerformed(actionEvent);
-            }
-        });
+        btnStaffLoginIn.addActionListener(this::btnStaffLoginInActionPerformed);
         /*
-        CustomerLoginIn
+        view.CustomerLoginIn
          */
         JButton btnCustomerLoginIn = new JButton("Customer Login In");
         btnCustomerLoginIn.setFont(new Font("Times New Roman", Font.PLAIN, 25));
         btnCustomerLoginIn.setBackground(new Color(255, 255, 255));
-        btnCustomerLoginIn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                btnCustomerLoginInActionPerformed(actionEvent);
-            }
-       
-        });
+        btnCustomerLoginIn.addActionListener(this::btnCustomerLoginInActionPerformed);
+
         /*
-        StaffRegister
-         */
-        JButton btnStaffRegister = new JButton("Staff Register");
-        btnStaffRegister.setFont(new Font("Times New Roman", Font.PLAIN, 25));
-        btnStaffRegister.setBackground(new Color(255,255,255));
-        btnStaffRegister.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                btnStaffRegisterActionPerformed(actionEvent);
-            }
-        });
-        /*
-        CustomerRegister
+        view.CustomerRegister
          */
         JButton btnCustomerRegister = new JButton("Customer Register");
         btnCustomerRegister.setFont(new Font("Times New Roman", Font.PLAIN, 25));
         btnCustomerRegister.setBackground(new Color(255,255,255));
-        btnCustomerRegister.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                btnCustomerRegisterActionPerformed(actionEvent);
-            }
-        });
+        btnCustomerRegister.addActionListener(this::btnCustomerRegisterActionPerformed);
+
         /*
         Exit
          */
         JButton btnExit = new JButton("Exit");
-        btnExit.setFont(new Font("Eras Bold ITC", Font.PLAIN, 18));
-        btnExit.setBackground(new Color(255, 255, 240));
-        btnExit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnExitActionPerformed(evt);
-            }
-        });
+        btnExit.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+        btnExit.setBackground(new Color(255, 255, 255));
+        btnExit.addActionListener(this::btnExitActionPerformed);
         GroupLayout gl_contentPane = new GroupLayout(contentPane);
         gl_contentPane.setHorizontalGroup(
-                gl_contentPane.createParallelGroup(GroupLayout.Alignment.LEADING)
-                        .addGroup(gl_contentPane.createSequentialGroup()
-                                .addGroup(gl_contentPane.createParallelGroup(GroupLayout.Alignment.LEADING)
-                                        .addGroup(gl_contentPane.createSequentialGroup()
-                                                .addContainerGap()
-                                                .addComponent(ChooseService))
-                                        .addGroup(gl_contentPane.createSequentialGroup()
-                                                .addGap(51)
-                                                .addGroup(gl_contentPane.createParallelGroup(GroupLayout.Alignment.TRAILING)
-                                                        .addComponent(btnExit)
-                                                        .addComponent(WelcomeToRestaurant)))
-                                        .addGroup(gl_contentPane.createSequentialGroup()
-                                                .addGap(205)
-                                                .addGroup(gl_contentPane.createParallelGroup(GroupLayout.Alignment.LEADING, false)
-                                                        .addComponent(btnStaffLoginIn, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                        .addComponent(btnCustomerLoginIn, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                        .addComponent(btnStaffRegister, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                        .addComponent(btnCustomerRegister, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                                .addContainerGap(101, Short.MAX_VALUE))
+        	gl_contentPane.createParallelGroup(Alignment.TRAILING)
+        		.addGroup(gl_contentPane.createSequentialGroup()
+        			.addContainerGap()
+        			.addComponent(ChooseService)
+        			.addContainerGap(220, Short.MAX_VALUE))
+        		.addGroup(gl_contentPane.createSequentialGroup()
+        			.addContainerGap(144, Short.MAX_VALUE)
+        			.addComponent(WelcomeToRestaurant)
+        			.addGap(127))
+        		.addGroup(Alignment.LEADING, gl_contentPane.createSequentialGroup()
+        			.addGap(232)
+        			.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
+        				.addGroup(gl_contentPane.createSequentialGroup()
+        					.addComponent(btnCustomerRegister)
+        					.addContainerGap())
+        				.addGroup(gl_contentPane.createSequentialGroup()
+        					.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
+        						.addComponent(btnCustomerLoginIn, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
+        						.addComponent(btnStaffLoginIn, Alignment.LEADING, GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE))
+        					.addGap(228))))
+        		.addGroup(gl_contentPane.createSequentialGroup()
+        			.addContainerGap(565, Short.MAX_VALUE)
+        			.addComponent(btnExit)
+        			.addGap(51))
         );
         gl_contentPane.setVerticalGroup(
-                gl_contentPane.createParallelGroup(GroupLayout.Alignment.LEADING)
-                        .addGroup(gl_contentPane.createSequentialGroup()
-                                .addGap(42)
-                                .addComponent(WelcomeToRestaurant)
-                                .addGap(18)
-                                .addComponent(ChooseService)
-                                .addGap(18)
-                                .addComponent(btnStaffLoginIn, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGap(26)
-                                .addComponent(btnCustomerLoginIn)
-                                .addGap(27)
-                                .addComponent(btnStaffRegister)
-                                .addGap(29)
-                                .addComponent(btnCustomerRegister)
-                                .addGap(32)
-                                .addComponent(btnExit)
-                                .addGap(35))
+        	gl_contentPane.createParallelGroup(Alignment.LEADING)
+        		.addGroup(gl_contentPane.createSequentialGroup()
+        			.addGap(42)
+        			.addComponent(WelcomeToRestaurant)
+        			.addGap(18)
+        			.addComponent(ChooseService)
+        			.addGap(26)
+        			.addComponent(btnStaffLoginIn)
+        			.addGap(18)
+        			.addComponent(btnCustomerLoginIn)
+        			.addGap(18)
+        			.addComponent(btnCustomerRegister)
+        			.addGap(127)
+        			.addComponent(btnExit)
+        			.addGap(35))
         );
         contentPane.setLayout(gl_contentPane);
     }
 
     private void btnCustomerRegisterActionPerformed(ActionEvent actionEvent) {
+    	EventQueue.invokeLater(() -> {
+            CustomerRegister customerRegister = new CustomerRegister();
+            customerRegister.addWindowListener(new WindowAdapter() {
+                @Override
+                public void windowClosing(WindowEvent e) {
+                    System.exit(0);
+                }
+            });
+            customerRegister.setVisible(true);
+        });
     }
 
-    private void btnStaffRegisterActionPerformed(ActionEvent actionEvent) {
-    }
 
     private void btnCustomerLoginInActionPerformed(ActionEvent evt) {
+        EventQueue.invokeLater(() -> {
+            CustomerLoginIn customerLoginIn = new CustomerLoginIn();
+            customerLoginIn.addWindowListener(new WindowAdapter() {
+                @Override
+                public void windowClosing(WindowEvent e) {
+                    System.exit(0);
+                }
+            });
+            customerLoginIn.setVisible(true);
+        });
     }
 
     private void btnStaffLoginInActionPerformed(ActionEvent evt) {
+        EventQueue.invokeLater(() -> {
+            StaffLoginIn staffLoginIn = new StaffLoginIn();
+            staffLoginIn.addWindowListener(new WindowAdapter() {
+                @Override
+                public void windowClosing(WindowEvent e) {
+                    System.exit(0);
+                }
+            });
+            staffLoginIn.setVisible(true);
+        });
     }
 
     private void btnExitActionPerformed(ActionEvent evt) {

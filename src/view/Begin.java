@@ -130,6 +130,7 @@ public class Begin extends JFrame{
     }
 
     private void btnCustomerRegisterActionPerformed(ActionEvent actionEvent) {
+        this.dispose();
     	EventQueue.invokeLater(() -> {
             CustomerRegister customerRegister = new CustomerRegister();
             customerRegister.addWindowListener(new WindowAdapter() {
@@ -144,6 +145,7 @@ public class Begin extends JFrame{
 
 
     private void btnCustomerLoginInActionPerformed(ActionEvent evt) {
+        this.dispose();
         EventQueue.invokeLater(() -> {
             CustomerLoginIn customerLoginIn = new CustomerLoginIn();
             customerLoginIn.addWindowListener(new WindowAdapter() {
@@ -157,6 +159,7 @@ public class Begin extends JFrame{
     }
 
     private void btnStaffLoginInActionPerformed(ActionEvent evt) {
+        this.dispose();
         EventQueue.invokeLater(() -> {
             StaffLoginIn staffLoginIn = new StaffLoginIn();
             staffLoginIn.addWindowListener(new WindowAdapter() {

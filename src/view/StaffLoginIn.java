@@ -17,12 +17,14 @@ import javax.swing.JLabel;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
+import com.jgoodies.forms.factories.DefaultComponentFactory;
 
 public class StaffLoginIn extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
+	private JTextField UserName;
+	private JTextField Password;
+	private JTextArea txtrStaffLoginIn;
 
 	/**
 	 * Launch the application.
@@ -44,6 +46,7 @@ public class StaffLoginIn extends JFrame {
 	 * Create the frame.
 	 */
 	public StaffLoginIn() {
+		setTitle("Staff Login In");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -53,11 +56,10 @@ public class StaffLoginIn extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		textField = new JTextField();
-		textField.setBounds(102, 74, 283, 33);
-		textField.setDropMode(DropMode.ON);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		UserName = new JTextField();
+		UserName.setBounds(102, 74, 283, 33);
+		contentPane.add(UserName);
+		UserName.setColumns(10);
 		
 		JButton btnNewButton = new JButton("Confirm");
 		btnNewButton.setFont(new Font("Times New Roman", Font.PLAIN, 14));
@@ -84,10 +86,26 @@ public class StaffLoginIn extends JFrame {
 		txtrPassword.setBounds(10, 147, 82, 24);
 		contentPane.add(txtrPassword);
 		
-		textField_1 = new JTextField();
-		textField_1.setDropMode(DropMode.ON);
-		textField_1.setColumns(10);
-		textField_1.setBounds(102, 149, 283, 33);
-		contentPane.add(textField_1);
+		Password = new JTextField();
+		Password.setColumns(10);
+		Password.setBounds(102, 149, 283, 33);
+		contentPane.add(Password);
+		
+		txtrStaffLoginIn = new JTextArea();
+		txtrStaffLoginIn.setFont(new Font("Monospaced", Font.BOLD, 23));
+		txtrStaffLoginIn.setBackground(SystemColor.inactiveCaptionBorder);
+		txtrStaffLoginIn.setText("Staff Login In");
+		txtrStaffLoginIn.setBounds(119, 10, 197, 33);
+		contentPane.add(txtrStaffLoginIn);
+		
+		JButton btnBack = new JButton("Back");
+		btnBack.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btnBack.setFont(new Font("Times New Roman", Font.PLAIN, 18));
+		btnBack.setBackground(Color.WHITE);
+		btnBack.setBounds(344, 226, 82, 29);
+		contentPane.add(btnBack);
 	}
 }

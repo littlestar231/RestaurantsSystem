@@ -3,26 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="7d6627ae-ba56-4fc3-b866-483f875b3a45" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/RestaurantsSystem$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/RestaurantsSystem$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/RestaurantsSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/RestaurantsSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$6.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/StaffLoginIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/StaffLoginIn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/StaffRegister.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CustomerLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CustomerRegister.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Payment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Begin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Begin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/CustomerLoginIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/CustomerLoginIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/CustomerRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/CustomerRegister.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/StaffLoginIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/StaffLoginIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/StaffRegister.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Begin">
+  <component name="RunManager" selected="Application.RestaurantsSystem">
     <configuration name="Begin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.Begin" />
       <module name="RestaurantsSystem" />
@@ -118,8 +105,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Begin" />
         <item itemvalue="Application.RestaurantsSystem" />
+        <item itemvalue="Application.Begin" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +133,7 @@
       <workItem from="1585058466241" duration="3055000" />
       <workItem from="1585062208445" duration="3173000" />
       <workItem from="1585065583505" duration="871000" />
-      <workItem from="1585305688659" duration="2298000" />
+      <workItem from="1585305688659" duration="2902000" />
     </task>
     <task id="LOCAL-00001" summary="init repo">
       <created>1585061384078</created>
@@ -183,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585066394727</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="modify the directory">
+      <created>1585308033084</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585308033084</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +201,7 @@
     <MESSAGE value="init repo" />
     <MESSAGE value="add 4 button in Begin" />
     <MESSAGE value="please edit Customer GUI" />
-    <option name="LAST_COMMIT_MESSAGE" value="please edit Customer GUI" />
+    <MESSAGE value="modify the directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify the directory" />
   </component>
 </project>

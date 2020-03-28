@@ -13,7 +13,7 @@ import java.awt.Color;
 import java.awt.GridLayout;
 import javax.swing.border.LineBorder;
 
-public class Order extends JFrame {
+public class CustomerOrder extends JFrame {
 
     private JPanel contentPane;
     private JPanel contentPane2;
@@ -25,7 +25,7 @@ public class Order extends JFrame {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    Order frame = new Order();
+                    CustomerOrder frame = new CustomerOrder();
                     frame.setVisible(true);
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -37,7 +37,7 @@ public class Order extends JFrame {
     /**
      * Create the frame.
      */
-    public Order() {
+    public CustomerOrder() {
 
         setTitle("Welcome xxx!");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

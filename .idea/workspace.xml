@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d6627ae-ba56-4fc3-b866-483f875b3a45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/view/ShowBill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/StaffLoginIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/StaffLoginIn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ModifyMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ModifyMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/StaffLoginIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/StaffLoginIn.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RestaurantsSystem">
+  <component name="RunManager" selected="Application.StaffModifyMenu">
     <configuration name="Begin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.Begin" />
       <module name="RestaurantsSystem" />
@@ -99,8 +102,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StaffModifyMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.StaffModifyMenu" />
+      <module name="RestaurantsSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StaffModifyMenu" />
         <item itemvalue="Application.RestaurantsSystem" />
         <item itemvalue="Application.Begin" />
       </list>
@@ -129,7 +146,8 @@
       <workItem from="1585058466241" duration="3055000" />
       <workItem from="1585062208445" duration="3173000" />
       <workItem from="1585065583505" duration="871000" />
-      <workItem from="1585305688659" duration="6146000" />
+      <workItem from="1585305688659" duration="6630000" />
+      <workItem from="1585382219867" duration="1044000" />
     </task>
     <task id="LOCAL-00001" summary="init repo">
       <created>1585061384078</created>
@@ -208,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585311159889</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add ModifyMenu and ShowBill for Staff">
+      <created>1585312109112</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1585312109112</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +262,7 @@
     <MESSAGE value="update README.md" />
     <MESSAGE value="update README.md and directory" />
     <MESSAGE value="Add ModifyMenu for Staff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ModifyMenu for Staff" />
+    <MESSAGE value="Add ModifyMenu and ShowBill for Staff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ModifyMenu and ShowBill for Staff" />
   </component>
 </project>

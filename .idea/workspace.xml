@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d6627ae-ba56-4fc3-b866-483f875b3a45" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/StaffOption.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/StaffLoginIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/StaffLoginIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ModifyMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/StaffModifyMenu.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +148,7 @@
       <workItem from="1585062208445" duration="3173000" />
       <workItem from="1585065583505" duration="871000" />
       <workItem from="1585305688659" duration="6630000" />
-      <workItem from="1585382219867" duration="1044000" />
+      <workItem from="1585382219867" duration="1296000" />
     </task>
     <task id="LOCAL-00001" summary="init repo">
       <created>1585061384078</created>
@@ -233,7 +234,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585312109112</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Rename">
+      <created>1585383491558</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1585383491558</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Rename">
+      <created>1585383520656</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1585383520656</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +278,7 @@
     <MESSAGE value="update README.md and directory" />
     <MESSAGE value="Add ModifyMenu for Staff" />
     <MESSAGE value="Add ModifyMenu and ShowBill for Staff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ModifyMenu and ShowBill for Staff" />
+    <MESSAGE value="Rename" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename" />
   </component>
 </project>

@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.SystemColor;
 
-public class ShowBill extends JFrame {
+public class StaffShowBill extends JFrame {
 
 	private JPanel contentPane;
 
@@ -22,7 +22,7 @@ public class ShowBill extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ShowBill frame = new ShowBill();
+					StaffShowBill frame = new StaffShowBill();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -34,7 +34,7 @@ public class ShowBill extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public ShowBill() {
+	public StaffShowBill() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();

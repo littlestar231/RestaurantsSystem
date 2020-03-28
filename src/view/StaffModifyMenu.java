@@ -1,19 +1,16 @@
 package view;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JRadioButtonMenuItem;
-import javax.swing.JMenuItem;
 import javax.swing.JLabel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class ModifyMenu extends JFrame {
+public class StaffModifyMenu extends JFrame {
 
 	private JPanel contentPane;
 
@@ -24,7 +21,7 @@ public class ModifyMenu extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ModifyMenu frame = new ModifyMenu();
+					StaffModifyMenu frame = new StaffModifyMenu();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -36,16 +33,17 @@ public class ModifyMenu extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public ModifyMenu() {
+	public StaffModifyMenu() {
+		setTitle("ModifyMenu");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 638, 436);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(10, 10, 296, 243);
+		panel.setBounds(10, 10, 354, 378);
 		contentPane.add(panel);
 		
 		JLabel lblNewLabel = new JLabel("Menu");
@@ -56,23 +54,27 @@ public class ModifyMenu extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		btnNewButton.setBounds(316, 20, 110, 23);
+		btnNewButton.setBounds(415, 31, 158, 42);
 		contentPane.add(btnNewButton);
 		
-		JButton btnNewButton_1 = new JButton("Delete");
-		btnNewButton_1.setBounds(316, 53, 110, 23);
-		contentPane.add(btnNewButton_1);
+		JButton btnChange = new JButton("Delete");
+		btnChange.setBounds(415, 83, 158, 42);
+		contentPane.add(btnChange);
 		
-		JButton btnNewButton_1_1 = new JButton("Change Name");
-		btnNewButton_1_1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-			}
-		});
-		btnNewButton_1_1.setBounds(316, 86, 110, 23);
-		contentPane.add(btnNewButton_1_1);
+		JButton btnChangeName = new JButton("Change Name");
+		btnChangeName.setBounds(415, 135, 158, 42);
+		contentPane.add(btnChangeName);
 		
-		JButton btnNewButton_1_2 = new JButton("Change Price");
-		btnNewButton_1_2.setBounds(316, 119, 110, 23);
-		contentPane.add(btnNewButton_1_2);
+		JButton btnChangePrice = new JButton("Change Price");
+		btnChangePrice.setBounds(415, 187, 158, 42);
+		contentPane.add(btnChangePrice);
+		
+		JButton btnBack = new JButton("Back");
+		btnBack.setBounds(415, 239, 158, 42);
+		contentPane.add(btnBack);
+		
+		JButton btnExit = new JButton("Exit");
+		btnExit.setBounds(415, 291, 158, 42);
+		contentPane.add(btnExit);
 	}
 }

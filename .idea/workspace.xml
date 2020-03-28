@@ -2,21 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d6627ae-ba56-4fc3-b866-483f875b3a45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entity/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/FoodList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/FoodTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Noodles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Staff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RestaurantsSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RestaurantsSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/calculation/Calculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Control/Calculation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Begin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boundary/Begin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/CustomerLoginIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boundary/CustomerLoginIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/CustomerOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boundary/CustomerOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/CustomerPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boundary/CustomerPayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/CustomerRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boundary/CustomerRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/StaffLoginIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boundary/StaffLoginIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/StaffModifyMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boundary/StaffModifyMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/StaffOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boundary/StaffOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/StaffShowBill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Boundary/StaffShowBill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/RestaurantsSystem$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/RestaurantsSystem$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/RestaurantsSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/RestaurantsSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/StaffLoginIn.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +88,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StaffModifyMenu">
+  <component name="RunManager" selected="Application.CustomerPayment">
     <configuration name="Begin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Boundary.Begin" />
       <module name="RestaurantsSystem" />
@@ -103,15 +102,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestaurantsSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RestaurantsSystem" />
+    <configuration name="CustomerLoginIn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Boundary.CustomerLoginIn" />
       <module name="RestaurantsSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Boundary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StaffModifyMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Boundary.StaffModifyMenu" />
+    <configuration name="CustomerOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Boundary.CustomerOrder" />
+      <module name="RestaurantsSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Boundary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerPayment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Boundary.CustomerPayment" />
+      <module name="RestaurantsSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Boundary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerRegister" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Boundary.CustomerRegister" />
       <module name="RestaurantsSystem" />
       <extension name="coverage">
         <pattern>
@@ -125,9 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StaffModifyMenu" />
-        <item itemvalue="Application.RestaurantsSystem" />
+        <item itemvalue="Application.CustomerPayment" />
+        <item itemvalue="Application.CustomerOrder" />
         <item itemvalue="Application.Begin" />
+        <item itemvalue="Application.CustomerRegister" />
+        <item itemvalue="Application.CustomerLoginIn" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +188,7 @@
       <workItem from="1585062208445" duration="3173000" />
       <workItem from="1585065583505" duration="871000" />
       <workItem from="1585305688659" duration="6630000" />
-      <workItem from="1585382219867" duration="2446000" />
+      <workItem from="1585382219867" duration="5264000" />
     </task>
     <task id="LOCAL-00001" summary="init repo">
       <created>1585061384078</created>
@@ -269,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585383605393</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update directory">
+      <created>1585387620051</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1585387620051</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,6 +341,7 @@
     <MESSAGE value="Add ModifyMenu and ShowBill for Staff" />
     <MESSAGE value="Add StaffOption" />
     <MESSAGE value="Rename" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename" />
+    <MESSAGE value="update directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="update directory" />
   </component>
 </project>

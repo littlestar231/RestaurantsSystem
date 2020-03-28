@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d6627ae-ba56-4fc3-b866-483f875b3a45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/FoodList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/FoodTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Noodles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Staff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/RestaurantsSystem$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/RestaurantsSystem$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/RestaurantsSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RestaurantsSystem/RestaurantsSystem.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RestaurantsSystem/view/Begin$1.class" beforeDir="false" />
@@ -188,7 +183,7 @@
       <workItem from="1585062208445" duration="3173000" />
       <workItem from="1585065583505" duration="871000" />
       <workItem from="1585305688659" duration="6630000" />
-      <workItem from="1585382219867" duration="5264000" />
+      <workItem from="1585382219867" duration="5388000" />
     </task>
     <task id="LOCAL-00001" summary="init repo">
       <created>1585061384078</created>
@@ -309,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585387620051</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="update Entities">
+      <created>1585390485928</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1585390485928</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,6 +344,7 @@
     <MESSAGE value="Add StaffOption" />
     <MESSAGE value="Rename" />
     <MESSAGE value="update directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="update directory" />
+    <MESSAGE value="update Entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="update Entities" />
   </component>
 </project>

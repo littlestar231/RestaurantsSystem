@@ -24,3 +24,4 @@ It is a Coursework
 - [ ] Database
 - [ ] Actions of Buttons in every class
 - [ ] Calculations and statistics
+- [ ] Finish methods of classes in Entity

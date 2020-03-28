@@ -1,4 +1,4 @@
-package calculation;
+package Control;
 
 public class Calculation {
 }

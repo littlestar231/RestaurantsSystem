@@ -1,4 +1,4 @@
-package view;
+package Boundary;
 
 import java.awt.EventQueue;
 

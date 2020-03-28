@@ -1,6 +1,5 @@
-package view;
+package Boundary;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -9,15 +8,11 @@ import javax.swing.border.EmptyBorder;
 import java.awt.SystemColor;
 import java.awt.Color;
 import javax.swing.JTextField;
-import javax.swing.SwingConstants;
 import javax.swing.JButton;
 import javax.swing.JTextArea;
-import javax.swing.DropMode;
-import javax.swing.JLabel;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
-import com.jgoodies.forms.factories.DefaultComponentFactory;
 import javax.swing.JPasswordField;
 
 public class StaffLoginIn extends JFrame {

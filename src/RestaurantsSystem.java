@@ -1,4 +1,4 @@
-import view.Begin;
+import Boundary.Begin;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.WindowAdapter;

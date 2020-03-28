@@ -6,12 +6,13 @@ It is a Coursework
 
 - #### RestaurantsSystem: program entrance
 
-- ##### view: includes classes about GUI.
+- ##### Boundary: includes classes about GUI.
 
-- ##### calculation: the classes related to calculations and statistics. 
+- ##### Control: the classes related to calculations and statistics. 
 
-- ##### data: includes classes about data processing.  
+- ##### Data: includes classes about data processing.  
 
+- ##### Entity: about information
 - ......
 
 ​	

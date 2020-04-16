@@ -1,4 +1,5 @@
 package Boundary;
+
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -242,14 +243,29 @@ public class CustomerOrder extends JFrame {
         //Nori面板
         JLabel lbl_XrNori = new JLabel("Extra Nori(\u00A31 )");
         panel_Nori.add(lbl_XrNori);
-        //label
+        JLabel lbl_NoriNum = new JLabel("0");
+        //Nori Num
         JButton btnAdd1 = new JButton("+1");
+        btnAdd1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                int num=Integer.parseInt(lbl_NoriNum.getText());
+                num++;
+                lbl_NoriNum.setText(String.valueOf(num));
+            }
+        });
         panel_Nori.add(btnAdd1);
         //+1 button
-        JLabel lbl_NoriNum = new JLabel("0");
         panel_Nori.add(lbl_NoriNum);
-        //Nori Num
+        //add label
         JButton btn_Reduce1 = new JButton("-1");
+        btn_Reduce1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                int num=Integer.parseInt(lbl_NoriNum.getText());
+                if(num>0)
+                    num--;
+                lbl_NoriNum.setText(String.valueOf(num));
+            }
+        });
         panel_Nori.add(btn_Reduce1);
         //-1 button
         JPanel panel_egg = new JPanel();
@@ -260,14 +276,25 @@ public class CustomerOrder extends JFrame {
         panel_egg.add(lbl_egg);
         //Extra boiled egg label
         JButton btn_Add2 = new JButton("+1");
+        JLabel lbl_EggNum = new JLabel("0");
+        btn_Add2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                int num=Integer.parseInt(lbl_EggNum.getText());
+                num++;
+                lbl_EggNum.setText(String.valueOf(num));
+            }
+        });
         panel_egg.add(btn_Add2);
         //+1 button
-        JLabel lbl_EggNum = new JLabel("0");
         panel_egg.add(lbl_EggNum);
         //鸡蛋的数量
         JButton btn_Reduce2 = new JButton("-1");
         btn_Reduce2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
+                int num=Integer.parseInt(lbl_EggNum.getText());
+                if(num>0)
+                    num--;
+                lbl_EggNum.setText(String.valueOf(num));
             }
         });
         panel_egg.add(btn_Reduce2);
@@ -285,13 +312,28 @@ public class CustomerOrder extends JFrame {
         JLabel lbl_Bamboo = new JLabel("Bamboo shoots(\u00A31)");
         panel_Bamboo.add(lbl_Bamboo);
         //竹子标签
+        JLabel lbl_BambooNum = new JLabel("0");
         JButton btnAdd3 = new JButton("+1");
+        btnAdd3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                int num=Integer.parseInt(lbl_BambooNum.getText());
+                num++;
+                lbl_BambooNum.setText(String.valueOf(num));
+            }
+        });
         panel_Bamboo.add(btnAdd3);
         //+1 button
-        JLabel lbl_BambooNum = new JLabel("0");
         panel_Bamboo.add(lbl_BambooNum);
         //竹子的数量
         JButton btn_reduce3 = new JButton("-1");
+        btn_reduce3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                int num=Integer.parseInt(lbl_BambooNum.getText());
+                if(num>0)
+                    num--;
+                lbl_BambooNum.setText(String.valueOf(num));
+            }
+        });
         panel_Bamboo.add(btn_reduce3);
         //-1button
 
@@ -303,15 +345,30 @@ public class CustomerOrder extends JFrame {
         JLabel lbl_Chashu = new JLabel("Extra Chashu(\u00A32)");
         panel_Chashu.add(lbl_Chashu);
         //chashu标签
+        JLabel lbl_ChashuNum = new JLabel("0");
         JButton btn_Add4 = new JButton("+1");
+        btn_Add4.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                int num=Integer.parseInt(lbl_ChashuNum.getText());
+                num++;
+                lbl_ChashuNum.setText(String.valueOf(num));
+            }
+        });
         panel_Chashu.add(btn_Add4);
         //+1 button
-        JLabel lbl_ChashuNUm = new JLabel("0");
-        panel_Chashu.add(lbl_ChashuNUm);
+
+        panel_Chashu.add(lbl_ChashuNum);
         //chashu Num
         JButton btn_redece4 = new JButton("-1");
-        panel_Chashu.add(btn_redece4);
+        btn_redece4.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                int num=Integer.parseInt(lbl_ChashuNum.getText());
+                if(num>0)
+                    num--;
+                lbl_ChashuNum.setText(String.valueOf(num));
 
+            }});
+        panel_Chashu.add(btn_redece4);
         JPanel panel = new JPanel();
         panel_Menu.add(panel);
         panel.setLayout(new BorderLayout(0, 0));
